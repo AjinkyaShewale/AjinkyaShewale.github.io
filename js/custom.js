@@ -127,6 +127,9 @@ $(function () {
 });
 
 $(window).on("load", function () {
+
+ 
+
   // Preloader
   $(".loading").fadeOut(500);
 
@@ -155,30 +158,24 @@ $(window).on("load", function () {
   $("#contact-form").validator();
 
   $("#contact-form").on("submit", function (e) {
-    if (!e.isDefaultPrevented()) {
-      var url = "send_mail.php";
-
-      $.ajax({
-        type: "POST",
-        url: url,
-        data: $(this).serialize(),
-        success: function (data) {
-          var messageAlert = "alert-" + data.type;
-          var messageText = data.message;
-
-          var alertBox =
-            '<div class="alert ' +
-            messageAlert +
-            ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
-            messageText +
-            "</div>";
-          if (messageAlert && messageText) {
-            $("#contact-form").find(".messages").html(alertBox);
-            $("#contact-form")[0].reset();
-          }
-        },
-      });
-      return false;
-    }
-  });
+    e.preventDefault();
+    let name = document.querySelector("#form_name").value;
+    let email = document.querySelector("#form_email").value;
+    let subject = document.querySelector("#form_subject").value;
+    let msg = document.querySelector("#form_message").value;
+    sendEmail(name, email, subject, msg);   
+    $("#contact-form")[0].reset();
+   });
 });
+
+function sendEmail(name, email, subject, msg){
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "ajinkyashewale.personal@gmail.com",
+    Password: "kdzdvtbugewvsgtq",
+    To: "ajinkyashewale29@gmail.com",
+    From: "ajinkyashewale.personal@gmail.com",
+    Subject: `${name} sent you a message with subject ${subject}`,
+    Body: `Name: ${name} <br/>Email: ${email}<br/>Subject: ${subject} <br/>Message: ${msg}` 
+  }).then((msg) => $("#form-submit").attr({"value" : "Thank You ! We will get you Soon...", "disabled" : "disabled"}))
+}
