@@ -766,6 +766,63 @@ p {
 
 
 
+/* Gallery Item 4 */
+.portfolio .item-img .infoWork4{
+  height: 300px; 
+  background-color: rgba(3, 250, 65, 0.1); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork4 img{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 4 Ends */
+
+
+
+
+
+/* Gallery Item 5 */
+.portfolio .item-img .infoWork5{
+  height: 300px; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork5 img{
+  height: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 5 Ends */
+
+
+/* Gallery Item 6 */
+.portfolio .item-img .infoWork6{
+  height: 300px; 
+  background-color: rgba(253, 249, 9, 0.2); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork6 img{
+  height: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 6 Ends */
+
+
 
 .portfolio .item-img:hover .item-img-overlay {
   opacity: 1;
