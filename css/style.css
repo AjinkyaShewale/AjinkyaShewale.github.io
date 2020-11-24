@@ -1378,6 +1378,20 @@ p {
     left: -22px;
   }
 }
+
+#name-copy:hover{
+  color: #f0f0f0;
+}
+
+
+.whatsapp-button {
+  position: fixed;
+  z-index: 999;
+  right: 15px;
+  bottom: 70px;
+  height: 44px;
+  width: 44px;
+}
 /* -------------------------------------------------------
                     End
 -------------------------------------------------------- */
