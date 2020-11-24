@@ -128,7 +128,7 @@ $(function () {
 
 $(window).on("load", function () {
 
- 
+
 
   // Preloader
   $(".loading").fadeOut(500);
@@ -163,12 +163,12 @@ $(window).on("load", function () {
     let email = document.querySelector("#form_email").value;
     let subject = document.querySelector("#form_subject").value;
     let msg = document.querySelector("#form_message").value;
-    sendEmail(name, email, subject, msg);   
+    sendEmail(name, email, subject, msg);
     $("#contact-form")[0].reset();
-   });
+  });
 });
 
-function sendEmail(name, email, subject, msg){
+function sendEmail(name, email, subject, msg) {
   Email.send({
     Host: "smtp.gmail.com",
     Username: "ajinkyashewale.personal@gmail.com",
@@ -176,6 +176,6 @@ function sendEmail(name, email, subject, msg){
     To: "ajinkyashewale29@gmail.com",
     From: "ajinkyashewale.personal@gmail.com",
     Subject: `${name} sent you a message with subject ${subject}`,
-    Body: `Name: ${name} <br/>Email: ${email}<br/>Subject: ${subject} <br/>Message: ${msg}` 
-  }).then((msg) => $("#form-submit").attr({"value" : "Thank You ! We will get you Soon...", "disabled" : "disabled"}))
+    Body: `Name: ${name} <br/>Email: ${email}<br/>Subject: ${subject} <br/>Message: ${msg}`
+  }).then((msg) => $("#form-submit").attr({ "value": "Thank You ! We will get you Soon...", "disabled": "disabled" }))
 }
