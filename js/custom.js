@@ -64,7 +64,6 @@ $(function () {
   $(".header .caption h3").typed({
     strings: [
       "Software Engineer",
-      "Assistant Professor",
       "Web Developer",
       "Educational Trainer",
       "UI/UX Designer",
