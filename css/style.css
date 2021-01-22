@@ -710,6 +710,120 @@ p {
   position: relative;
   overflow: hidden;
 }
+
+/* Gallery Item 1 */
+.portfolio .item-img .infoWork{
+  height: 300px; 
+  background-color: rgba(239,109,38,0.15); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork img{
+  height: 100px;
+  width: 100px;
+}
+/* Gallery Item 1 Ends */
+
+/* Gallery Item 2 */
+.portfolio .item-img .infoWork2{
+  height: 300px; 
+  background-color: rgba(54, 147, 208,0.15); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork2 img{
+  height: 60px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 2 Ends */
+
+
+
+/* Gallery Item 3 */
+.portfolio .item-img .infoWork3{
+  height: 300px; 
+  background-color: rgba(108, 112, 114, 0.2); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork3 img{
+  height: 60px;
+  width: 90px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 3 Ends */
+
+
+
+
+/* Gallery Item 4 */
+.portfolio .item-img .infoWork4{
+  height: 300px; 
+  background-color: rgba(3, 250, 65, 0.1); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork4 img{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 4 Ends */
+
+
+
+
+
+/* Gallery Item 5 */
+.portfolio .item-img .infoWork5{
+  height: 300px; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork5 img{
+  height: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 5 Ends */
+
+
+/* Gallery Item 6 */
+.portfolio .item-img .infoWork6{
+  height: 300px; 
+  background-color: rgba(253, 249, 9, 0.2); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .item-img .infoWork6 img{
+  height: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+/* Gallery Item 6 Ends */
+
+
+
 .portfolio .item-img:hover .item-img-overlay {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -1377,6 +1491,20 @@ p {
   .resume .resume-content .cont.text-right:after {
     left: -22px;
   }
+}
+
+#name-copy:hover{
+  color: #f0f0f0;
+}
+
+
+.whatsapp-button {
+  position: fixed;
+  z-index: 999;
+  right: 15px;
+  bottom: 70px;
+  height: 44px;
+  width: 44px;
 }
 /* -------------------------------------------------------
                     End
